@@ -15,10 +15,22 @@
   <body>
     <nav>
       <a href="/" aria-current="page">Hi</a>
-      <a href="/page2.html">Other page</a>
+      
     </nav>
     <main>
       <h1>Home page</h1>
+      <p id="o"></p>
+      <p id="o1"></p>
     </main>
+    <script>
+    const searchParams = new URLSearchParams(window.location.search);
+
+
+      document.getElementById("o").innerHTML  = searchParams.get('startapp')
+      document.getElementById("o1").innerHTML  = window.location.href;
+
+      
+    </script>
   </body>
+  
 </html>
